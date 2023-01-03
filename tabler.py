@@ -9,7 +9,7 @@ while True:
     url = input("Enter the URL of the website: ")
     try:
         response = requests.get(url)
-        break()
+        break
     except requests.exceptions.RequestException:
         print("Invalid URL. Please Try Again.")
 html = response.text
